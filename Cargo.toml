@@ -1,0 +1,25 @@
+[package]
+name = "rssit"
+version = "0.0.1"
+authors = [ "Glen Kim <glen@say11.com>" ]
+edition = "2018"
+description = "Publishes RSS feeds of aggregated social news"
+documentation = "https://github.com/glenkim/rssit"
+readme = "README.md"
+license = "MPL-2.0"
+repository = "https://github.com/glenkim/rssit"
+crate-type = "bin"
+
+
+[dependencies]
+chrono = "0.4"
+cloud-storage = "0.8"
+env_logger = "0.8"
+log = "0.4"
+readability = "0.1"
+reqwest = { version = "0.11", features = ["json"] }
+retry = "1.2"
+rss = { version = "1.10", features = ["validation"] }
+serde = "1.0"
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
